@@ -9,7 +9,7 @@ module RSpec
         end
 
         def raise_does_not_implement_error(klass, method_name)
-          __raise "#{klass} does not implement ##{method_name}"
+          __raise "#{klass} does not implement instance method ##{method_name}"
         end
 
         def raise_message_already_received_by_other_instance_error(method_name, object_inspect, invoked_instance)
